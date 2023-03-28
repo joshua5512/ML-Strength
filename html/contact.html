@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+    <link rel="stylesheet" href="/style/styles.css">
+    <script src="../javascript/script.js" defer></script>
+  </head>
+  <body>
+    <header class="nav-component">  
+    </header>
+    <main class="contact-page">
+      <h2 class="contact-title">Contact us</h2>
+      <section class="half-n-half">
+        <section class="form">
+          <form id="contact-form" action="/html/contact" method="post">
+            <h3>Get in touch</h3>
+            <label for="firstname" class="info"><img src="../imgs/name.png" class="icon" alt="icon">First name:</label>
+            <input type="text" id="firstname" placeholder="first name" pattern="[a-zA-Z]{2,}" required>
+            <span class="error">First name invalid. Must be at least 2 letters</span>
+
+            <label for="lastname" class="info"><img src="../imgs/name.png" class="icon" alt="icon">Last name:</label>
+            <input type="text" placeholder="last name" id="lastname" pattern="[a-zA-Z]{2,}" required>
+            <span class="error">Last name invalid. Must be at least 2 letters</span>
+
+            <label for="email" class="info"><img src="../imgs/mail.png" class="icon" alt="icon">Email address:</label>
+            <input type="email" placeholder="email" pattern="[\S{1,}@\S{1,}[.]\S{1,}]" id="email" required>
+            <span class="error">Email invalid. Must be a valid form</span>
+
+            <label for="phone" class="info"><img src="../imgs/phone-call.png" class="icon" alt="icon">Phone number:</label>
+            <input type="tel" placeholder="04" id="phone" pattern="[0-9]{10}" required>
+            <span class="error">Phone number invalid. Must be 10 numbers</span>
+
+            <label for="message" class="info"><img src="../imgs/comment.png" class="icon" alt="icon">Message:</label>
+            <textarea id="message" required></textarea>
+            <span class="error">Message must be filled.</span>
+            <input type="submit" id="submit-button">
+
+          </form>
+          <button id="myBtn" >HELP</button> 
+        </section>
+      
+        <section>
+          <section class="location">
+            <h3>Carindale Location</h3>
+            <p><img src="../imgs/location.png" class="icon" alt="icon">Shop 11, Level 1, Westfield Carindale Shopping Center</p>
+            <p><img src="../imgs/phone-call.png" class="icon" alt="icon"> 07 1111 1111</p>
+            <p><img src="../imgs/mail.png" class="icon" alt="icon">carindale@mlstrength.com.au</p>
+          </section>
+          <section class="location">
+            <h3>Chermside Location</h3>
+            <p><img src="../imgs/location.png" class="icon" alt="icon">Shop 11, Level 1, Westfield Chermside Shopping Center</p>
+            <p><img src="../imgs/phone-call.png" class="icon" alt="icon"> 07 1111 1112</p>
+            <p><img src="../imgs/mail.png" class="icon" alt="icon">chermside@mlstrength.com.au</p>
+          </section>
+          <section class="location">
+            <h3>Brisbane city Location</h3>
+            <p><img src="../imgs/location.png" class="icon" alt="icon">Shop 11, Level 1, The Myer Shopping Center</p>
+            <p><img src="../imgs/phone-call.png" class="icon" alt="icon"> 07 1111 1113</p>
+            <p class="bottom-contact"><img src="../imgs/mail.png" class="icon" alt="icon">brisbane@mlstrength.com.au</p>
+          </section>
+        </section>
+      </section>
+
+      <!-- The Modal -->
+      <section id="myModal" class="modal">
+        <!-- Modal content -->
+        <section class="modal-content">
+          <span class="close">&times;</span>
+          <form id="contact-form-2" action="/html/contact" method="post">
+
+            <label for="firstname" class="info"><img src="../imgs/name.png" class="icon" alt="icon">First name:</label>
+            <input type="text" name="first-name" id="firstname" value="hua"  required>
+          
+            <label for="lastname" class="info"><img src="../imgs/name.png" class="icon" alt="icon">Last name:</label>
+            <input type="text" name="last-name" id="lastname" value="wei"  required>
+
+            <label for="email" class="info"><img src="../imgs/mail.png" class="icon" alt="icon">Email address:</label>
+            <input type="email" id="email" value="huawei@gmail.com" required>
+            
+            <label for="phone" class="info"><img src="../imgs/phone-call.png" class="icon" alt="icon">Phone number:</label>
+            <input type="tel" id="phone" value="0432 432 432" required>
+        
+            <label for="message" class="info"><img src="../imgs/comment.png" class="icon" alt="icon">Message:</label>
+            <textarea required>I am interested in the new iPhone14, and would like to know if there is any stock in your shop...</textarea>
+          </form>
+        </section>
+      </section> 
+    </main>
+    <footer class="footer-element">
+    </footer>
+  </body>
+</html>
